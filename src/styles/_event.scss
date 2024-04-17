@@ -1,70 +1,52 @@
-.event {
+.event { 
     padding: 80px 0;
 
-    &--frontend {
-    background-image: linear-gradient(359deg, #442bdb, #1b6ca7);
-    }
-
-    &--ux-ui {
-     background-image: linear-gradient(359deg, #89223b, #442bdb);
+     &--frontend {
+background-image: linear-gradient(#000, red);
      }
+
+     &--ux-ui {
+        background-image: linear-gradient(red, #000);
+     }
+
+     &--data-science {
+        background-image: linear-gradient(#000,red);
+     }
+
+     &--backend {
+        background-image: linear-gradient(red, #000);
+     }
+    
+
+
+            &__image {
+                max-width: 360px;
+                margin-top: 18px;
+            }
         
-    &--data-science {
-    background-image: linear-gradient(359deg, #9c791d, #89223b);
-     }
-
-     &--beckend {
-    background-image: linear-gradient(359deg, #89223b, #9c791d);
-    }
-
-    &--image-left {
-        .container {
-            display: flex;
-            flex-direction: column-reverse;
+            &__details {
+                margin-top: 8px;
+                margin-right: 40px;
+                &__title {
+                    margin-top: 12px;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        
+            &__description {
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
-    }
-            
-
-    .container {
+     
+     .event__container {
+        flex-direction: row-reverse;
         display: flex;
-        gap: 40px;
+        max-width: 940px;
+        width: 100%;
+        margin: 0 auto
+     }
 
-    }
-    
 
-    &__image {
-        max-width: 360px;
-    }
 
-    &__details {
-        &__title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 16px;
-        }
-
-        &__description {
-            line-height: 22px;
-        }
-
-        
-    }
-
-    @media (max-width: 640px) {
-        .container {
-            display: block;
-            margin-left: 4px;
-        }
-
-    &__image {
-width: 100%;
-margin-left: 4px;
-    }
-
-    &__details {
-        margin-right: 0;
-        margin-bottom: 16px;
-    }
-    
-}
-}
